@@ -1,22 +1,11 @@
-# Mundo da Natureza
+# Nome
 
-Página web feita com HTML e CSS para apresentar informações sobre meio ambiente.
+Feito por Ygor e Rafael Felipe da turma 62-2
 
-## Tecnologias
-- HTML5
-- CSS3 (Grid, Flexbox, Media Queries)
+# Titulo do Projeto
 
-## Estrutura
-- index.html
-- style.css
-- pasta fotos/ para imagens
+Mundo da Natureza
 
-## Funcionalidades
-- Navegação com hover
-- Layout com Grid e Flexbox
-- Formulário com validação básica
-- Responsivo para celulares
+# Link
 
----
-
-Projeto para fins educacionais.
+https://turma-62-2.vercel.app
