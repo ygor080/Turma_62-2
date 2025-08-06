@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rastreamento - AquiExpress</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo AquiExpress" class="logo-icon" />
+      <h1>AquiExpress</h1>
+    </div>
+
+    <div class="search-bar">
+      <!-- Formulário de pesquisa no topo -->
+      <form onsubmit="event.preventDefault(); window.location.href='index2.html';">
+        <input type="text" name="query" placeholder="Pesquisar" />
+      </form>
+    </div>
+
+    <div class="header-buttons">
+      <img src="imagens/sacola.png" alt="Carrinho de Compras" class="cart-icon" onclick="alert('Carrinho')" />
+      <button onclick="alert('Cadastro')">SIGN UP</button>
+      <button onclick="alert('Login')">LOG IN</button>
+    </div>
+  </header>
+
+  <main class="rastreamento-container">
+    <h2>Rastreamento</h2>
+
+    <div class="timeline">
+      <!-- Cada evento representa uma atualização no rastreio -->
+      <div class="evento">
+        <div class="data-box">
+          <span>28/05</span>
+          <small>18:03</small>
+        </div>
+        <p>Estamos aguardando os produtos chegarem até nós.</p>
+      </div>
+
+      <div class="evento">
+        <div class="data-box">
+          <span>30/05</span>
+          <small>10:09</small>
+        </div>
+        <p>Produtos saindo da base em Jundiaí/SP com destino à Jaboatão dos Guararapes/PE</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

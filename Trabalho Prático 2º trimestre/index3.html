@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bola Sandrini - AquiExpress</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo AquiExpress" class="logo-icon" />
+      <h1>AquiExpress</h1>
+    </div>
+    <div class="search-bar">
+      <form onsubmit="event.preventDefault(); window.location.href='index2.html';">
+        <input type="text" name="query" placeholder="Pesquisar" />
+      </form>
+    </div>
+    <div class="header-buttons">
+      <img src="imagens/sacola.png" alt="Carrinho de Compras" class="cart-icon" onclick="alert('Carrinho')" />
+      <button onclick="alert('Cadastro')">SIGN UP</button>
+      <button onclick="alert('Login')">LOG IN</button>
+    </div>
+  </header>
+
+  <main class="pagina-produto">
+    <div class="produto-detalhe">
+      <div class="imagem-produto">
+        <img src="imagens/sandrini imensa.png" alt="Bola Sandrini" />
+      </div>
+      <div class="info-produto">
+        <h2>Bola Campo Pro Oficial Sandrini<br>Edição Limitada</h2>
+        <p class="preco-antigo">R$ 68,50</p>
+        <p class="preco-novo">R$ 58,23 <span class="pix">no Pix</span></p>
+        <p class="desconto">15% de desconto no pix</p>
+
+        <div class="botoes-produto">
+          <!-- Os botões estão dentro de links <a>, o que permite que ao clicar, o usuário vá para outra página -->
+          <a href="index4.html">
+            <button class="btn-comprar">
+              <img src="imagens/carrinho branco.png" alt="Carrinho" class="btn-icon" />
+              COMPRAR AGORA
+            </button>
+          </a>
+          <a href="index4.html">
+            <button class="btn-sacola">
+              <img src="imagens/sacola branca.png" alt="Sacola" class="btn-icon" />
+              ADICIONAR À SACOLA
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Revisão de Pagamento - AquiExpress</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo AquiExpress" class="logo-icon" />
+      <h1>AquiExpress</h1>
+    </div>
+
+    <div class="search-bar">
+      <!-- Barra de busca que redireciona ao enviar -->
+      <form onsubmit="event.preventDefault(); window.location.href='index2.html';">
+        <input type="text" name="query" placeholder="Pesquisar" />
+      </form>
+    </div>
+
+    <div class="header-buttons">
+      <img src="imagens/sacola.png" alt="Carrinho de Compras" class="cart-icon" onclick="alert('Carrinho')" />
+      <button onclick="alert('Cadastro')">SIGN UP</button>
+      <button onclick="alert('Login')">LOG IN</button>
+    </div>
+  </header>
+
+  <main class="revisao-container">
+    <h2>Revisão</h2>
+
+    <div class="revisao-box">
+      <div class="pagamento">
+        <!-- Seção mostrando forma de pagamento (aqui, Pix) -->
+        <h3>Pagamento <a href="#" class="alternar-pagamento">Alternar Pagamento</a></h3>
+        <div class="pix-box">
+          <img src="imagens/pix.png" alt="Pix" />
+          <div class="pix-info">
+            <p><strong>Pix</strong></p>
+            <p>Valor total: <strong>R$ 58,23</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="resumo">
+        <!-- Resumo detalhado da compra -->
+        <p>Produtos (1) <span style="float:right;">R$ 68,50</span></p>
+        <p>Frete <span style="float:right;">Grátis</span></p>
+        <p>Desconto <span style="float:right;">- R$ 10,27</span></p>
+        <p class="total">Total da sacola: <span style="float:right;"><strong>R$ 58,23</strong></span></p>
+      </div>
+    </div>
+
+    <!-- Botão de finalizar compra -->
+    <a href="index7.html" class="botao-verde"> CONCLUIR</a>
+  </main>
+</body>
+</html>

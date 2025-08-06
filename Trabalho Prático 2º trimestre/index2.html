@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquiExpress</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo AquiExpress" class="logo-icon" />
+      <h1>AquiExpress</h1>
+    </div>
+    <div class="search-bar">
+      <form onsubmit="event.preventDefault(); window.location.href='index2.html';">
+        <input type="text" name="query" placeholder="Pesquisar" />
+      </form>
+    </div>
+    <div class="header-buttons">
+      <img src="imagens/sacola.png" alt="Carrinho de Compras" class="cart-icon" onclick="alert('Carrinho')" />
+      <button onclick="alert('Cadastro')">SIGN UP</button>
+      <button onclick="alert('Login')">LOG IN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="produtoscatalogo">
+      <!-- Cada "div" representa um produto. A tag <a> permite clique para outra página. -->
+      <a href="index3.html" class="produto">
+        <img src="imagens/sandrini.png" alt="Produto 1" />
+        <p>Bola Campo Pro Oficial Sandrini Edição Limitada</p>
+        <strong>R$ 58,23</strong>
+      </a>
+
+      <div class="produto">
+        <img src="imagens/air fryer.png" alt="Produto 2" />
+        <p>Air Fryer Britânia BFR31 Preto com Timer 3L</p>
+        <strong>R$ 199,00</strong>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/bicicleta.png" alt="Produto 3" />
+        <p>Bicicleta Ergométrica Magnética Gallant Elite</p>
+        <strong>R$ 1.615,20</strong>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/makita.png" alt="Produto 4" />
+        <p>Serra Mármore Makita 1300W + 2 Discos</p>
+        <strong>R$ 413,90</strong>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/tapete.png" alt="Produto 5" />
+        <p>Tapete Borracha Strada Cabine Simples 2 Peças</p>
+        <strong>R$ 157,60</strong>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/leite ninho.png" alt="Produto 6" />
+        <p>Kit 3 Ninho Fases 1+ Fórmula Infantil 800g</p>
+        <strong>R$ 161,97</strong>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/pro wheel.png" alt="Produto 7" />
+        <p>Volante Logitech PRO WHEEL para Xbox e PC</p>
+        <strong>R$ 8.799,12</strong>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/armadura.png" alt="Produto 8" />
+        <p>Armadura Medieval Escudo e Lança 48cm Retrô</p>
+        <strong>R$ 449,00</strong>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/luneta.png" alt="Produto 9" />
+        <p>Luneta Riflescope Mira Caça Visão Longo Alcance</p>
+        <strong>R$ 299,43</strong>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/ram.png" alt="Produto 10" />
+        <p>Miniatura Caminhonete Ram 1500 2019</p>
+        <strong>R$ 287,02</strong>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

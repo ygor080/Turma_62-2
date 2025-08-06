@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrar / Criar Conta - AquiExpress</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo AquiExpress" class="logo-icon" />
+      <h1>AquiExpress</h1>
+    </div>
+
+    <div class="search-bar">
+      <!-- Barra de pesquisa simples que redireciona ao enviar -->
+      <form onsubmit="event.preventDefault(); window.location.href='index2.html';">
+        <input type="text" name="query" placeholder="Pesquisar" />
+      </form>
+    </div>
+
+    <div class="header-buttons">
+      <img src="imagens/sacola.png" alt="Carrinho de Compras" class="cart-icon" onclick="alert('Carrinho')" />
+      <button onclick="alert('Cadastro')">SIGN UP</button>
+      <button onclick="alert('Login')">LOG IN</button>
+    </div>
+  </header>
+
+  <main class="auth-container">
+    <div class="auth-box">
+      <h2>Criar conta</h2>
+      <!-- Formulário de cadastro com apenas campo de e-mail -->
+      <form onsubmit="event.preventDefault();">
+        <label for="email-cadastro">E-Mail</label>
+        <input type="email" id="email-cadastro" placeholder="Digite seu e-mail" required />
+        <!-- Botão estilizado que leva para a próxima etapa -->
+        <a href="index6.html" class="botao-verde"> CONTINUAR</a>
+      </form>
+    </div>
+
+    <div class="auth-box">
+      <h2>Entrar</h2>
+      <!-- Formulário de login com e-mail e senha -->
+      <form onsubmit="event.preventDefault();">
+        <label for="email-login">E-Mail</label>
+        <input type="email" id="email-login" placeholder="Digite seu e-mail" required />
+
+        <label for="senha-login">Senha</label>
+        <div class="senha-wrapper">
+          <input type="password" id="senha-login" placeholder="Digite sua senha" required />
+          <!-- Ícone de olho para mostrar/ocultar senha -->
+          <img src="imagens/olho.png" alt="Mostrar senha" onclick="toggleSenha()" />
+        </div>
+
+        <a href="index6.html" class="botao-verde"> CONTINUAR</a>
+        <a href="index6.html" class="botao-azul">ENTRAR SEM SENHA</a>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    // Alterna a visibilidade da senha entre texto e oculto
+    function toggleSenha() {
+      const input = document.getElementById("senha-login");
+      input.type = input.type === "password" ? "text" : "password";
+    }
+  </script>
+</body>
+</html>

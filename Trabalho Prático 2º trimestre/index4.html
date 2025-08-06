@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resumo da Compra - AquiExpress</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="Logo AquiExpress" class="logo-icon" />
+      <h1>AquiExpress</h1>
+    </div>
+    <div class="search-bar">
+      <form onsubmit="event.preventDefault(); window.location.href='index2.html';">
+        <input type="text" name="query" placeholder="Pesquisar" />
+      </form>
+    </div>
+    <div class="header-buttons">
+      <img src="imagens/sacola.png" alt="Carrinho de Compras" class="cart-icon" onclick="alert('Carrinho')" />
+      <button onclick="alert('Cadastro')">SIGN UP</button>
+      <button onclick="alert('Login')">LOG IN</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="resumo-produto">
+      <img src="imagens/sandrini imensa.png" alt="Bola Sandrini" />
+      <div class="resumo-info">
+        <h3>Bola Campo Pro Oficial Sandrini<br>Edição Limitada</h3>
+        <!-- O <select> permite escolher a quantidade do produto -->
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+      </div>
+      <div class="preco-resumo">
+        R$ 58,23 <span>no Pix<br>ou R$ 68,50 no cartão</span>
+      </div>
+    </section>
+
+    <!-- Botão para continuar com o processo de compra -->
+    <a href="index5.html" class="botao-continuar">CONTINUAR</a>
+  </main>
+</body>
+</html>

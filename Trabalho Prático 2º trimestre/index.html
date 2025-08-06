@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquiExpress</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .search-bar form {
+      display: flex;
+    }
+    .search-bar input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <img src="imagens/logo.png" alt="" class="logo-icon" />
+      <h1>AquiExpress</h1>
+    </div>
+    <div class="search-bar">
+      <form id="searchForm" action="index2.html" method="get">
+        <input 
+          type="text" 
+          name="query" 
+          id="searchInput" 
+          placeholder=" Pesquisar" 
+          required 
+        />
+      </form>
+    </div>
+    <div class="header-buttons">
+      <img src="imagens/sacola.png" alt="Carrinho de Compras" class="cart-icon" onclick="alert('Carrinho')" />
+      <button onclick="alert('Cadastro')">SIGN UP</button>
+      <button onclick="alert('Login')">LOG IN</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="banner">
+        <img src="imagens/banner.png" alt="Banner" />
+      </section>
+
+      <section class="produtos">
+        <a href="index3.html" class="produto">
+          <img src="imagens/sandrini larga.png" alt="Produto 1" />
+          <p>Bola Campo Pro Oficial Sandrini Edição Limitada</p>
+          <strong>R$ 58,23</strong>
+        </a>
+
+        <div class="produto">
+          <img src="imagens/makita larga.png" alt="Produto 2" />
+          <p>Serra Mármore 4.3/8 POL 1.300W + 2 Discos 4100NH3ZX2 MAKITA</p>
+          <strong>R$ 413,90</strong>
+        </div>
+
+        <div class="produto">
+          <img src="imagens/ram larga.png" alt="Produto 3" />
+          <p>Miniatura Caminhonete Ram 1500 2019 Ferro Abre Porta A.R Variedades MT</p>
+          <strong>R$ 287,02</strong>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    // Esse script escuta quando a tecla "Enter" é pressionada no campo de pesquisa.
+    // Se tiver texto digitado, ele envia o formulário. Se estiver vazio, mostra um alerta.
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const searchTerm = this.value.trim();
+        if (searchTerm) {
+          document.getElementById('searchForm').submit();
+        } else {
+          alert("Digite algo para pesquisar!");
+        }
+      }
+    });
+  </script>
+</body>
+</html>
