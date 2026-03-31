@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Produtos</h1>
+
+    <div class="links">
+        <a href="/produtos">Listar</a>
+        <a href="/produtos?modo=novo">Novo Produto</a>
+        <a href="/">Home</a>
+    </div>
+
+    <% if (modo === 'novo') { %>
+
+        <h2>Novo Produto</h2>
+        <form action="/produtos/salvar" method="POST">
+            <input name="nome" placeholder="Nome do produto" required>
+            <button>Cadastrar</button>
+        </form>
+
+    <% } else if (modo === 'editar') { %>
+
+        <h2>Editar Produto</h2>
+        <form action="/produtos/atualizar/<%= produto.id %>" method="POST">
+            <input name="nome" value="<%= produto.nome %>" required>
+            <button>Salvar</button>
+        </form>
+
+    <% } else { %>
+
+        <h2>Lista de Produtos</h2>
+
+        <ul>
+            <% produtos.forEach(p => { %>
+                <li>
+                    <strong><%= p.nome %></strong>
+
+                    <div class="links">
+                        <a href="/produtos?modo=editar&id=<%= p.id %>">Editar</a>
+                        <a href="/produtos/deletar/<%= p.id %>">Excluir</a>
+                    </div>
+                </li>
+            <% }) %>
+        </ul>
+
+    <% } %>
+
+</div>
+
+</body>
+</html>
